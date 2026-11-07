@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои работы</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh;
+            background-color: #013a1a;
+            
+        }
+
+        .header {
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 50px;
+            color: white;
+        }
+
+        .header h2 {
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        .block {
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: rgba(28, 90, 82, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .block h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 35px;
+            font-size: 30px;
+            font-weight: 400;
+            padding-bottom: 5px;
+        }
+
+        .category {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .question {
+            padding: 20px;
+            color: #fff;
+            background-color: #104428;
+            font-size: 30px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .question:hover {
+            background-color: #1c7443;
+        }
+
+        .answer {
+            padding: 30px 20px;
+            color: #fff;
+            background-color: #1c7443;
+        }
+
+        .answer ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .answer li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f6d9db;
+        }
+
+        .answer li:last-child {
+            border-bottom: none;
+        }
+
+        .answer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        .answer a:hover {
+            background-color: #3d7259;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Группа 4ИСИП-1023 </br> Котелкин Матвей Анатольевич</h1>
+    </div>
+
+    <div class="block">
+        <h1>Список заданий</h1>
+
+        <details class="category">
+            <summary class="question">Лабораторные работы</summary>
+            <ul class="answer">
+                <li><a href="./labs/lab1.pdf">Лабараторная 1</a></li>
+                <li><a href="./labs/lab2.pdf">Лабараторная 2</a></li>
+                <li><a href="./labs/lab3.pdf">Лабараторная 3</a></li>
+            </ul>
+        </details>
+
+        <details class="category">
+            <summary class="question">Практические работы</summary>
+            <ul class="answer">
+                <li><a href="./pracrices/pr1.pdf">Практическая 1</a></li>
+                <li><a href="./pracrices/pr3.pdf">Практическая 3</a></li>
+                <li>
+                    <details class="category">
+                        <summary class="question">Практическая 4</summary>
+                        <ul class="answer">
+                            <li><a href="./pracrices/4pr/pr4.pdf">Практическая 4 отчёт</a></li>
+                            <li><a href="./pracrices/4pr/index.html">Сайт с адаптивным дизайном</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </details>
+
+        <details class="category">
+            <summary class="question">Конспекты</summary>
+            <ul class="answer">
+            </ul>
+        </details>
+
+</body>
+</html>
